@@ -1,0 +1,86 @@
+Endpoint de TAREFAS:
+CAMINHO DA APLICACAO - api/v1/
+
+
+RESOUCE TAREFAS
+
+-----------------------------------------
+
+
+C
+
+POST - CRIAR 
+POST /{{API\_ROOT}}/TAREFAS/CRIA\_TAREFAS
+
+->USER\_ID \*
+->NOME\_TAREFA \*
+->TIPO\_TAREFA \*
+->PRAZO\_TAREFA
+->LEMBRETE\_TAREFA 
+->STATUS\_TAREFA
+->DESCRICAO\_TAREFA
+
+
+RESPOSTA - 201 {CREATED}
+->TAREFA\_ID
+
+-----------------------------------------
+
+R
+
+GET - PEGAR
+POST /{{API\_ROOT}}/TAREFAS/PEGAR\_TAREFAS
+
+->TAREFA\_ID \*
+
+
+RESPOSTA - 200 {OK}
+
+->USER\_ID
+->NOME\_TAREFA
+->TIPO\_TAREFA
+->PRAZO\_TAREFA
+->LEMBRETE\_TAREFA
+->STATUS\_TAREFA
+->DESCRICAO\_TAREFA
+
+
+-----------------------------------------
+
+U
+
+PUT - ALTERAR
+PUT /{{API\_ROOT}}/TAREFAS/ALTERAR\_TAREFAS
+
+\->TAREFA\_ID \*
+
+->NOME\_TAREFA
+->TIPO\_TAREFA
+->PRAZO\_TAREFA
+->LEMBRETE\_TAREFA
+->STATUS\_TAREFA
+->DESCRICAO\_TAREFA
+
+
+
+RESPOSTA - 200 {OK}
+->TAREFA\_ID
+
+
+-----------------------------------------
+
+D
+
+DELETE - CRIAR
+DELETE /{{API\_ROOT}}/TAREFAS/CRIA\_TAREFAS
+
+\->TAREFA\_ID \*
+
+
+RESPOSTA - 200 {OK}
+
+
+
+
+
+
